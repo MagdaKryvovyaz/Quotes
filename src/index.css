@@ -1,0 +1,134 @@
+body {
+  background-image: url('../img/DALL·E\ 2023-03-17\ 14.15.51\ -\ background\ collor.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  width: 100%;
+}
+
+
+
+.containers {
+  backdrop-filter: blur(40px);
+  padding: 60px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.quote-card {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+}
+
+.quote-card p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.quote-card small {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-new-quote {
+  margin-top: 3rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: #1e7e34;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-new-quote:hover {
+  background-color: #1d734f;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-new-quote:focus {
+  outline: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .containers {
+    padding: 50px;
+  }
+  
+  .quote-container {
+    max-width: 500px;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .quote-card p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  
+  .quote-card small {
+    font-size: 1rem;
+  }
+  
+  .btn-new-quote {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .quote-container {
+    margin: 0 auto;
+    padding: 0.5rem;
+    border: #1d734f 1px solid;
+  }
+  
+  .quote-card {
+    width: 100%;
+  }
+  
+  .quote-card p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .quote-card small {
+    font-size: 0.8rem;
+  }
+  
+  .btn-new-quote {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+} 
